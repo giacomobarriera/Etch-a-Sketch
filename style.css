@@ -1,5 +1,17 @@
 .container {
     display: flex;
-
+    flex-direction: column;
     border: 1px solid black;
+}
+
+.gridBox{
+    display: flex;
+    flex: 1;
+    border: 1px solid red;
+}
+
+.row {
+    display: flex;
+    border: 1px solid green;
+    height:20px;
 }
