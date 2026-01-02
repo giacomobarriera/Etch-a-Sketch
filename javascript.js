@@ -3,7 +3,7 @@ const container = document.querySelector(".container");
 console.log(container)
 
 //creare grid 16 x 16
-const rowBox = function () {
+const gridBox = function () {
     //ciclo per row
     for (let i = 1; i < 17; i++) {
     const row = document.createElement("div");
@@ -19,5 +19,4 @@ const rowBox = function () {
    }
 }
 
- 
-rowBox();
+gridBox();
