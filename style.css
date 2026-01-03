@@ -1,6 +1,21 @@
+body, html {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
 .container {
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
+    justify-content: center;
+    align-items: center;
+
+    /*max-width: 850px;*/
+
+    width: 100vw;
+    height: 100vh;
+
     border: 1px solid black;
 }
 
@@ -9,10 +24,10 @@
     flex: 1;
     border: 1px solid red;
     aspect-ratio: 1/1;
-    width: 100%;
+    
 }
 
 .row {
-    display: flex;
+    /*display: flex;*/
     border: 1px solid green;
 }
