@@ -13,7 +13,7 @@ const gridBox = function () {
     for (let i = 1; i < 17; i++) {
         const a = document.createElement("div");
         row.appendChild(a);
-        a.textContent = "a" + i;
+        //a.textContent = "a" + i;
         a.classList.add("gridBox");
     }
    }
