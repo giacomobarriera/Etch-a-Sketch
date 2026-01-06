@@ -3,7 +3,7 @@ const container = document.querySelector(".container");
 console.log(container)
 
 //creare grid 16 x 16
-const gridBox = function () {
+
     //ciclo per row
     for (let i = 1; i < 17; i++) {
     const row = document.createElement("div");
@@ -13,10 +13,12 @@ const gridBox = function () {
     for (let i = 1; i < 17; i++) {
         const a = document.createElement("div");
         row.appendChild(a);
-        //a.textContent = "a" + i;
         a.classList.add("gridBox");
+        a.addEventListener("mouseover", () => {
+            this.style.backgroundColor = "yellow";
+        })
+        
     }
    }
-}
 
-gridBox();
+   
