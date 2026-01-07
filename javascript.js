@@ -14,8 +14,11 @@ console.log(container)
         const a = document.createElement("div");
         row.appendChild(a);
         a.classList.add("gridBox");
-        a.addEventListener("mouseover", () => {
-            this.style.backgroundColor = "yellow";
+        a.addEventListener("mouseenter", () => {
+            a.classList.add("active");
+        })
+        a.addEventListener("mouseleave", () => {
+            a.classList.remove("active");
         })
         
     }
