@@ -19,6 +19,7 @@ console.log(container)
         })
         a.addEventListener("mouseleave", () => {
             a.classList.remove("active");
+            a.classList.add("pixel");
         })
         
     }

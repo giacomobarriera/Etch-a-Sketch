@@ -11,3 +11,4 @@ ho compreso che in questo caso, utilizzando flex era meglio lavorare con la dime
 ho compreso come sia necessario ragionare sulle proprietà da assegnare alle varie classi, per evitare che vadano in contrasto; è stato infatti necessario non assegnare misura specifica a gridbox ma min width e min height a 0;
 ho impostato una misura massima(uguale per height e width)  al container per evitare che andasse oltre i limiti della finestra;
 ho imparato ad usare min() perchè il grid potesse adattarsi in maniera dinamica alla pagina.
+ho compreso utilizzo di mouseenter e mouseleave
