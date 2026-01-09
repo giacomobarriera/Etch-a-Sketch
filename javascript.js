@@ -1,6 +1,18 @@
+//prendere form
+const form = document.getElementById("myForm");
+console.log(form)
+
+
 //prendere container
 const container = document.querySelector(".container");
 console.log(container)
+
+//funzione per scegliere numero celle del grid
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const numero = document.getElementById("Numero").value;
+    console.log(numero);
+})
 
 //creare grid 16 x 16
 

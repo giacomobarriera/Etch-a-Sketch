@@ -12,7 +12,7 @@ body {
     align-items: center;
     flex-direction: column;
 }
-
+/*da sistemare stile*/
 form {
     display: flex;
     flex-direction:column;
