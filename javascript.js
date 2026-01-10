@@ -30,7 +30,7 @@ form.addEventListener("submit", (e) => {
             console.log(row);
     
             //ciclo per box
-        /*for (let i = 1; i < 17; i++) {
+        for (let i = 1; i <= numeroInt; i++) {
             const a = document.createElement("div");
             row.appendChild(a);
             a.classList.add("gridBox");
@@ -41,7 +41,7 @@ form.addEventListener("submit", (e) => {
                 a.classList.remove("active");
                 a.classList.add("pixel");
             })
-        }*/
+        }
     }
 }
 
