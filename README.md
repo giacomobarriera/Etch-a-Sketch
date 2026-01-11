@@ -12,3 +12,8 @@ ho compreso come sia necessario ragionare sulle proprietà da assegnare alle vari
 ho impostato una misura massima(uguale per height e width)  al container per evitare che andasse oltre i limiti della finestra;
 ho imparato ad usare min() perchè il grid potesse adattarsi in maniera dinamica alla pagina.
 ho compreso utilizzo di mouseenter e mouseleave
+appreso come rimuovere tutti i child di un node:
+per rimuovere un child è importante specificare la posizione e non il nome 
+	funzione while (container.firlstChild {
+		container.removeChild(container.firstChild)
+
