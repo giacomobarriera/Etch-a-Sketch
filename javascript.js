@@ -22,10 +22,10 @@ form.addEventListener("submit", (e) => {
     if (isNaN(numeroInt)) {
         alert("Attento! Assicurati di inserire un numero!")
     } else {
-        if (document.getElementsByClassName("row") != null) {
+          if (container.hasChildNodes()) {
+        //if (document.getElementsByClassName("row") != null) {
             //sistemare rimozione rows
-            document.removeChild("row");
-            
+            console.log("row già creato")
             for (let i = 1; i <= numeroInt; i++) {
             const row = document.createElement("div");
             container.appendChild(row);
@@ -47,6 +47,7 @@ form.addEventListener("submit", (e) => {
             })
         }}
         } else {
+            console.log("row non creati")
         for (let i = 1; i <= numeroInt; i++) {
             const row = document.createElement("div");
             container.appendChild(row);
