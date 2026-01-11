@@ -22,6 +22,31 @@ form.addEventListener("submit", (e) => {
     if (isNaN(numeroInt)) {
         alert("Attento! Assicurati di inserire un numero!")
     } else {
+        if (document.getElementsByClassName("row") != null) {
+            //sistemare rimozione rows
+            document.removeChild("row");
+            
+            for (let i = 1; i <= numeroInt; i++) {
+            const row = document.createElement("div");
+            container.appendChild(row);
+            row.classList.add("row");
+            //verifica
+            console.log(row);
+    
+            //ciclo per box
+        for (let i = 1; i <= numeroInt; i++) {
+            const a = document.createElement("div");
+            row.appendChild(a);
+            a.classList.add("gridBox");
+            a.addEventListener("mouseenter", () => {
+                a.classList.add("active");
+            })
+            a.addEventListener("mouseleave", () => {
+                a.classList.remove("active");
+                a.classList.add("pixel");
+            })
+        }}
+        } else {
         for (let i = 1; i <= numeroInt; i++) {
             const row = document.createElement("div");
             container.appendChild(row);
@@ -42,9 +67,10 @@ form.addEventListener("submit", (e) => {
                 a.classList.add("pixel");
             })
         }
-    }
-}
+        } 
 
+        }
+    }
 })
 //creare grid 16 x 16
 /*
