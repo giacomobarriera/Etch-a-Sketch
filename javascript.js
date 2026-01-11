@@ -22,77 +22,31 @@ form.addEventListener("submit", (e) => {
     if (isNaN(numeroInt)) {
         alert("Attento! Assicurati di inserire un numero!")
     } else {
-          if (container.hasChildNodes()) {
-        //if (document.getElementsByClassName("row") != null) {
-            //sistemare rimozione rows
-            console.log("row già creato")
-            for (let i = 1; i <= numeroInt; i++) {
-            const row = document.createElement("div");
-            container.appendChild(row);
-            row.classList.add("row");
-            //verifica
-            console.log(row);
-    
-            //ciclo per box
-        for (let i = 1; i <= numeroInt; i++) {
-            const a = document.createElement("div");
-            row.appendChild(a);
-            a.classList.add("gridBox");
-            a.addEventListener("mouseenter", () => {
-                a.classList.add("active");
-            })
-            a.addEventListener("mouseleave", () => {
-                a.classList.remove("active");
-                a.classList.add("pixel");
-            })
-        }}
-        } else {
-            console.log("row non creati")
-        for (let i = 1; i <= numeroInt; i++) {
-            const row = document.createElement("div");
-            container.appendChild(row);
-            row.classList.add("row");
-            //verifica
-            console.log(row);
-    
-            //ciclo per box
-        for (let i = 1; i <= numeroInt; i++) {
-            const a = document.createElement("div");
-            row.appendChild(a);
-            a.classList.add("gridBox");
-            a.addEventListener("mouseenter", () => {
-                a.classList.add("active");
-            })
-            a.addEventListener("mouseleave", () => {
-                a.classList.remove("active");
-                a.classList.add("pixel");
-            })
-        }
-        } 
+        //funzione per eliminare tutti i nodi di container
+        while (container.firstChild) {
+                container.removeChild(container.firstChild);
+            }
 
+        for (let i = 1; i <= numeroInt; i++) {
+            const row = document.createElement("div");
+            container.appendChild(row);
+            row.classList.add("row");
+            //verifica
+            console.log(row);
+    
+            //ciclo per box
+            for (let i = 1; i <= numeroInt; i++) {
+                const a = document.createElement("div");
+                row.appendChild(a);
+                a.classList.add("gridBox");
+                a.addEventListener("mouseenter", () => {
+                    a.classList.add("active");
+                })
+                a.addEventListener("mouseleave", () => {
+                    a.classList.remove("active");
+                    a.classList.add("pixel");
+                })
+            }
         }
     }
 })
-//creare grid 16 x 16
-/*
-    //ciclo per row
-    for (let i = 1; i < 17; i++) {
-    const row = document.createElement("div");
-    container.appendChild(row);
-    row.classList.add("row");
-    //ciclo per box
-    for (let i = 1; i < 17; i++) {
-        const a = document.createElement("div");
-        row.appendChild(a);
-        a.classList.add("gridBox");
-        a.addEventListener("mouseenter", () => {
-            a.classList.add("active");
-        })
-        a.addEventListener("mouseleave", () => {
-            a.classList.remove("active");
-            a.classList.add("pixel");
-        })
-        
-    }
-   }
-*/
