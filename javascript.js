@@ -26,8 +26,13 @@ form.addEventListener("submit", (e) => {
         while (container.firstChild) {
                 container.removeChild(container.firstChild);
             }
-
-        for (let i = 1; i <= numeroInt; i++) {
+            for (let i = 1; i <= numeroInt; i++) {
+             const gridBox = document.createElement("div");
+             container.appendChild(gridBox);
+             gridBox.classList.add("gridBox");
+             console.log(gridBox)
+            }
+        /*for (let i = 1; i <= numeroInt; i++) {
             const row = document.createElement("div");
             container.appendChild(row);
             row.classList.add("row");
@@ -47,6 +52,6 @@ form.addEventListener("submit", (e) => {
                     a.classList.add("pixel");
                 })
             }
-        }
+        }*/
     }
 })
